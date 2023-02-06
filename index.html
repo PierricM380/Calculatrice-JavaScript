@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma calculette</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="calculatrice" name="calc">
+        <input class="display" type="text" name="display" readonly value="0">
+        <span class="num clear" onclick="resetValue()">C</span>
+        <span class="num operation" onclick="addValue('/')">÷</span>
+
+        <span class="num" onclick="addValue('7')">7</span>
+        <span class="num" onclick="addValue('8')">8</span>
+        <span class="num" onclick="addValue('9')">9</span>
+
+        <span class="num operation" onclick="addValue('*')">x</span>
+
+        <span class="num" onclick="addValue('4')">4</span>
+        <span class="num" onclick="addValue('5')">5</span>
+        <span class="num" onclick="addValue('6')">6</span>
+
+        <span class="num operation" onclick="addValue('-')">-</span>
+
+        <span class="num" onclick="addValue('1')">1</span>
+        <span class="num" onclick="addValue('2')">2</span>
+        <span class="num" onclick="addValue('3')">3</span>
+
+        <span class="num operation" onclick="addValue('+')">+</span>
+        <span class="num zero" onclick="addValue('0')">0</span>
+        
+        <span class="num" onclick="addValue('.')">.</span>
+        <span class="num equal" onclick="calculate()">=</span>
+
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
